@@ -1,0 +1,640 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+:root{
+  --text-color: #333333; 
+  --button-color: #0063FF; 
+  --main-color: #FFCF3A;
+  --bg-color: #ffffff;
+  --color-orange: #FB8232;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+}
+/* Navbar Kontainer */
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.container-nav{
+    display: flex;
+    padding: 3% 5%;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+}
+
+/* Button sign in and register */
+.sign{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    font-weight: 600;
+}
+.sign .button a{
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+.sign .register{
+    background-color: var(--button-color);
+    padding: 5px 10px;
+    border-radius: 12px;  
+    font-weight: 500;
+}
+.sign .register a{
+    color: var(--bg-color);
+}
+
+/* icon dan burger menu */
+.icon{
+    display: flex;
+    gap: 0.8rem;
+    align-items: baseline;  
+}
+.icon #menu-icon{
+    font-size: 1.5em;
+    color: var(--text-color)
+}
+.icon h3{
+    color: var(--color-orange);
+    font-size: 1.5em;
+}
+
+/* List navbar */
+.list-nav{
+    padding: 55px 5% 8px;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    display: none;
+    background-color: var(--bg-color);
+}
+.list-nav ul li{
+    padding: 14px 0 5px 0;
+    text-align: center;
+    border-bottom: 1px solid rgb(198, 194, 194);
+}
+.list-nav ul li:last-child{
+    border: none;
+}
+.list-nav ul li:hover{
+    background-color: #f1f1f1f1;
+    font-weight: 600;
+}
+.list-nav ul li a{
+    color: var(--text-color);
+}
+
+/* Hero section */
+/* Hero text (Bagian Kiri) */
+section{
+    padding: 5%;
+}
+.main{
+    padding-top: 100px;
+
+}
+.main-text h4{
+    color: var(--color-orange);
+    margin-bottom: 1vh;
+}
+.main-text h1{
+    color: var(--text-color);
+    font-size: 3.2em;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+.main-text h1 span{
+    color: #FB8232;
+}
+.main-text p{
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+.container-button{
+    display: flex;
+    gap: 5vw;
+}
+.main-text .button a{
+    background-color: var(--main-color);
+    padding: 10px 16px;
+    border-radius: 24px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.container-icon-play{
+    display: flex;
+    gap: 0.4em;
+}
+#play-icon{
+    font-size: 1.5em;
+}
+
+/* Hero image (bagian kanan) */
+.main-image{
+    width: 100%;
+    /* height: 400px; */
+    /* position: relative;
+    bottom: 32px; */
+} 
+.main-image img{
+    width: 100%;
+}
+
+/* Fitur 1 */
+.fitur-1{
+    background-color: var(--button-color);
+    padding: 0;
+}
+.fitur1-text{
+    color: var(--bg-color);
+    text-align: center;
+}
+.fitur1-text p{
+    color: gainsboro;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(185, 181, 181);
+}
+.fitur1-text h3{
+    padding-top: 12px;
+}
+
+/* Fitur 2 */
+.fitur-2 .title{
+    text-align: center;
+    margin-top: 1.2em;
+}
+.fitur-2 .title h4{
+    color: var(--color-orange);
+    font-size: 0.9rem;
+}
+.fitur-2 .title h3{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-bottom: 1em;
+}
+.fitur-2-card{
+    background-color: var(--bg-color);
+    padding: 1em 1.3em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: var(--text-color);
+}
+.fitur-2-card .icon{
+    font-size: 1.4em;
+    margin-bottom: 0.8em;
+}
+
+/* Fitur 3 */
+.image-fitur-3{
+    width: 80%;
+    margin: auto;
+}
+.image-fitur-3 img{
+    width: 100%;
+}
+.text-fitur-3{
+    color: var(--text-color);
+}
+.text-fitur-3 h4{
+    color: var(--color-orange);
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+}
+.text-fitur-3 h3{
+    margin: 0.3rem 0;
+}
+.fitur-3 .button{
+    margin-top: 1.5em;
+}
+.fitur-3 .button a{
+    color: var(--text-color);
+    font-weight: 700;
+    background-color: var(--main-color);
+    padding: 0.8em 2em;
+    border-radius: 16px;
+}
+.fitur-3 .container-2{
+    margin-top: 3em;
+}
+
+/* Fitur 4 */
+.fitur-4 h4{
+    color: var(--color-orange);
+    text-align: center;
+    margin-top: 1rem;
+}
+.fitur-4 h2{
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.subject-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-subject{
+    border: 1px solid gainsboro;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    width: 50%;
+    margin-bottom: 0.5rem;
+}
+.icon-subject-1{
+    color: #0063FF;
+}
+.icon-subject-2{
+    color: #4FAE8E;
+}
+.icon-subject-3{
+    color: #8C59A8
+}
+.icon-subject-4{
+    color: #FA6400
+}
+.icon-subject-5{
+    color: #24807E
+}
+.icon-subject-6{
+    color: #AB8100
+}
+.icon-subject-7{
+    color: #49841D
+}
+.icon-subject-8{
+    color: #7F7F7F
+}
+.margin-icon-subject{
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Testimoni */
+.testimoni h4{
+    text-align: center;
+    color: var(--color-orange);
+}
+.testimoni h2{
+    text-align: center;
+}
+.testimoni .profil-review{
+    text-align: center;
+    margin-top: 2rem;
+}
+.testimoni .review{
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+#center-review{
+    margin: 0 1rem;
+}
+.testimoni .review-text{
+    text-align: justify;
+}
+
+/* reference */
+.reference{
+    text-align: center; 
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+.reference a{
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* Footer */
+footer{
+    background-color: var(--button-color);
+    color: var(--bg-color);
+    padding: 1.5rem 0;
+    text-align: center;
+}
+/* Responsive Mobile */
+@media only screen and (min-width: 480px) {
+    /* Navbar */
+    .list-nav{
+        padding-top: 7vh;
+    }
+    .container-nav .sign{
+        font-size: 1.1em;
+        align-items: first baseline;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* Navbar */
+    .container-nav{
+        padding-bottom: 1.8vh;
+    }
+    .list-nav{
+        padding-top: 8vh;
+    }
+
+    /* Main konten */
+    .main-image{
+        width: 90%;
+        margin: auto;
+    }
+    .main-text h1{
+        font-size: 5rem;
+    }
+
+    .fitur1-text{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 10%;
+    }
+    .fitur1-text p{
+        border: none;
+    }
+    .expert, .hours, .subject, .active{
+        border-bottom: 1px solid rgb(185, 181, 181);
+        padding: 0 5vh;
+        width: 50%;
+    }
+
+    /* Fitur 4 */
+    .card-subject{
+        width: 49%;
+    }
+}
+@media only screen and (min-width: 750px) {
+    /* Main konten */
+    .main-image{
+        width: 78%;
+    }
+    .fitur-2-card{
+        padding: 2em 1.5em;
+    }
+    /* Fitur 3 */
+    .fitur-3{
+        padding-top: 0;
+    }
+    .image-fitur-3{
+        width: 40%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 801px) {
+    /* Navbar */
+    #navbar{
+        display: flex;
+        align-items: center;
+        background-color: var(--bg-color);
+        box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+        justify-content: space-between;
+        padding-right: 5%;
+    }
+    .container-nav{
+        position: relative;
+        justify-content: start;
+        align-items: center;
+        gap: 0.8rem;
+        width: 49%;
+        z-index: none;
+        box-shadow: none;
+        
+    }
+    .icon #menu-icon{
+        display: none;
+    }
+    .list-nav{
+        box-shadow: none;
+        padding: 0;
+        display: flex;
+    }
+    .list-nav ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 1.9rem;
+    }
+    .list-nav ul li{
+        border: none;
+    }
+    .list-nav ul li a{
+        color: var(--text-color);
+        font-weight: 500;
+    }
+    .list-nav ul li:hover{
+        border-bottom: 1.2px solid var(--text-color);
+        background-color: var(--bg-color); 
+    }
+
+    /* Main Konten */
+    .main{
+        display: flex;
+    }
+    .main-text{
+        padding-top: 10vh;
+    }
+    .main-text h1{
+        font-size: 3.4rem;
+    }
+    .main-image{
+        width: 90%;
+        margin: 0;
+    }
+
+    /* Fitur 1 */
+    .fitur1-text{
+        padding: 0 10%;
+    
+    }
+    .fitur1-text p{
+        font-size: 0.8rem;
+    }
+    .expert, .hours, .subject, .active{
+        width: 25%;
+        text-align: start;
+        padding: 1em 0;
+    }
+
+    /* Fitur 2 */
+    .fitur-2 .container-card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .fitur-2-card{
+        width: 45%;
+    }
+    /* Fitur 3 */
+    .fitur-3{
+        padding: 0 8vw;
+    }
+    .text-fitur-3 h3{
+        font-size: 1.5em;
+        margin: 0.3em 0;
+    }
+    .text-fitur-3 p{
+        line-height: 1.6em;
+        font-size: 1.1rem;
+    }
+
+    /* Fitur 4 */
+    .subject-card{
+        justify-content: space-evenly;
+    }
+    .card-subject{
+        width: 30%;
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    /* review testimoni */
+    .testimoni .review-text{
+        width: 75%;
+        text-align: center;
+        margin: auto;
+    }
+
+    /* reference */
+    .reference{
+        width: 90%;
+        margin: 0 auto 2rem auto;
+        border-radius: 16px;
+    }
+    .reference a{
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width: 934px) {
+
+    /* Main Konten */
+    .main-text h1{
+        font-size: 3.8rem;
+    }
+    .main-text p{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    /* Navbar */
+    .container-nav{
+        padding-top: 3vh;
+        gap: 3.1rem;
+        width: 53%;
+    }
+    .list-nav ul li a{
+        font-size: 1.1em;
+    }
+    .icon h3{
+        font-size: 2em;
+    }
+    .sign .button a{
+        font-size: 1em;
+    }
+
+    /* Main Konten */
+    .main-text h4{
+        padding-top: 0.8vh;
+        font-size: 1.3rem;
+        margin-top: 1vh;
+    }
+    .main-image{
+        width: 70%;
+        margin-top: 1vh;
+    }
+    .main-text h1{
+        font-size: 4.6rem;
+    }
+    .main-text p{
+        font-size: 1.1rem;
+    }
+
+    .fitur1-text{
+        margin-left: 4vw;
+    }
+
+    /* Fitur 2 */
+    .fitur-2{
+        margin: 8rem 0;
+    }
+    .container-card{
+        margin-top: 2em;
+    }
+    .fitur-2 .title h3{
+        font-size: 2rem;
+    }
+    .fitur-2-card{
+        width: 23%;
+    }
+    .fitur-2-card .icon{
+        margin-bottom: 0.7rem;
+    }
+    .fitur-2-card h4{
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+    .fitur-2-card p{
+        font-size: 0.7rem;
+    }
+
+    /* Fitur 3 */
+    .container-1{
+        display: flex;
+    }
+    .container-1 .image-fitur-3{
+        width: 100%;
+        margin-right: 2em;
+    }
+    .container-2{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .container-2 .image-fitur-3{
+        width: 130%;
+        margin-left: 2em;
+    }
+    /* Fitur 4 */
+    .fitur-4{
+        margin-top: 6rem;
+    }
+    .card-subject{
+        width: 23%;
+    }
+
+    /* Review Testimoni */
+    .testimoni .review-text{
+        width: 55%;
+    }
+}
+@media only screen and (min-width: 1281px) {
+    /* Main Konten */
+    .main-text{
+        padding-top: 10%;
+    }
+    .main-text h4{
+        font-size: 1.5rem;
+    }
+    .main-text h1{
+        font-size: 5.3rem;
+    }
+    .main-text p{
+        font-size: 1.2rem;
+    }
+    .main{
+        padding-top: 7em;
+    }
+}
